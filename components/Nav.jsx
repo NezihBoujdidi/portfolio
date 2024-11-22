@@ -13,6 +13,10 @@ const links = [
         path: "/projects",
     },
     {
+        name: 'work experience',
+        path: '/work-experience'
+    },
+    {
         name: "contact",
         path: "/contact",
     },
@@ -21,7 +25,7 @@ const links = [
 const Nav = () => {
     const pathname = usePathname();
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-10">
         {links.map((link, index)=> {
             return(
                 <Link href={link.path} key={index} className={`${
