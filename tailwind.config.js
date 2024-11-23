@@ -35,5 +35,14 @@ module.exports = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),
+	function ({ addUtilities }) {
+		addUtilities({
+		  ".text-outline": {
+			"-webkit-text-stroke": "2px white", 
+			"color": "transparent", 
+		  },
+		});
+    },
+  ]
 };
