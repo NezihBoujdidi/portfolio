@@ -5,7 +5,6 @@ import React, { useState } from "react";
 
 import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
-
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
 import {
@@ -132,7 +131,7 @@ const Projects = () => {
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                     {/* image */}
                     <div className="relative w-full h-full">
-                      <image
+                      <Image
                         src={project.image}
                         fill
                         className="object-cover"
