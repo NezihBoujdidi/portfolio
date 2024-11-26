@@ -17,7 +17,7 @@ const Photo = () => {
                 }}
         className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
             <Image 
-            src="/assets/profile pic.png"
+            src="/assets/profpic.JPG"
             priority
             quality={100}
             fill
@@ -32,7 +32,7 @@ const Photo = () => {
                     xmlns="http://www.w3.org/2000/svg" >
           <motion.circle cx="253" 
           cy="253" 
-          r="250" 
+          r="235" 
           stroke="#00ff99" 
           strokeWidth="4" 
           strokeLinecap="round" 

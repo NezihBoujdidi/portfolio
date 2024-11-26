@@ -8,7 +8,7 @@ import { RiNextjsFill } from "react-icons/ri";
 const about = {
   title : "About me",
   description:
-  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos magni sequi inventore quas quis iure",
+  "Motivated and enthusiastic, I possess a strong ability to adapt and a quick understanding of workflow, making me an ideal candidate to meet your expectations!",
   info: [
     {
       fieldName: "Name",
@@ -38,7 +38,7 @@ const about = {
 const experience = {
    title: "My Experience",
    description:
-   "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos magni sequi inventore quas quis iure",
+   "Gained valuable hands-on experience and built a strong foundation by contributing to real-world projects in professional settings!",
    items: [
     {
       company: "Teamwill",
@@ -57,7 +57,7 @@ const experience = {
 const education = {
   title: "My Education",
   description:
-  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos magni sequi inventore quas quis iure",
+  "Strong academic foundation, complemented by hands-on experience and continuous learning in modern technologies!",
   items: [
    {
      institution: "National School of Engineers of Carthage, Enicarthage",
@@ -80,7 +80,7 @@ const education = {
 const skills = {
   title: "My Skills",
   decription:
-  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos magni sequi inventore quas quis iure",
+  "Versatile developer with expertise in a wide range of technologies, including Next.js, Angular, and more!",
   skillList: [
     {
       icon: <FaHtml5 />,

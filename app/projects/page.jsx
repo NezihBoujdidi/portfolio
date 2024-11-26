@@ -26,7 +26,7 @@ const projects = [
     description: "This app provides a seamless way to manage and monitor attendance for both instructors and students.",
     stack: [{name: "Typescript"}, {name: "Next.js"}, {name: "Express.js"} ],
     image: '/assets/add abs.png',
-    live:'https://students-attendance-management.netlify.app/login',
+    live:'https://students-attendance-management.netlify.app',
     hint:'Use nezih / nezih to login or create a user!',
     github:"https://github.com/NezihBoujdidi/StudentsAttendanceManagement",
   },
