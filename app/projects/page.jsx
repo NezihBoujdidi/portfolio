@@ -21,33 +21,36 @@ import ProjectsSliderBtns from "@/components/ProjectsSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "fullstack",
+    category: "FullStack Students Attendance Management",
     title: "project 01",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos magni sequi inventore quas quis iure",
-    stack: [{name: "Typescript"}, {name: "Angular"}, {name: "Spring Boot"}, {name: "MySql"} ],
-    image: '',
-    live:'',
-    github:"",
+    description: "This app provides a seamless way to manage and monitor attendance for both instructors and students.",
+    stack: [{name: "Typescript"}, {name: "Next.js"}, {name: "Express.js"} ],
+    image: '/assets/add abs.png',
+    live:'https://students-attendance-management.netlify.app/login',
+    hint:'Use nezih / nezih to login or create a user!',
+    github:"https://github.com/NezihBoujdidi/StudentsAttendanceManagement",
   },
   {
     num: "02",
-    category: "fullstack",
+    category: "FullStack Debt Recovery Management System",
     title: "project 02",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos magni sequi inventore quas quis iure",
-    stack: [{name: "Typescript"}, {name: "Next.js"}, {name: "Express.js"} ],
-    image: '',
+    description: " In Progress Project. A comprehensive solution for managing client invoices, payments, and dunning strategies with automated reminders and detailed tracking.",
+    stack: [{name: "Typescript"}, {name: "Angular"}, {name: "Spring Boot"}, {name: "MySql"} ],
+    image: '/assets/appPic.png',
     live:'',
-    github:"",
+    hint:'',
+    github:"https://github.com/NezihBoujdidi/AppRecouvrement",
   },
   {
     num: "03",
-    category: "fullstack",
+    category: "Medical Assistance",
     title: "project 03",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos magni sequi inventore quas quis iure",
+    description: "Medical Assistance App: A tool for caregivers to manage elderly patients.",
     stack: [{name: "Typescript"}, {name: "Angular"}, {name: "Spring Boot"}, {name: "MySql"} ],
-    image: '',
+    image: '/assets/medicalAssist.png',
     live:'',
-    github:"",
+    hint:'',
+    github:"https://github.com/NezihBoujdidi/MedicalAssistance",
   },
 ];
 
@@ -90,34 +93,39 @@ const Projects = () => {
             </ul>
             {/* border */}
             <div className="border border-white/20"></div>
-            {/* buttons */}
-            <div className="flex items-center gap-4">
-              {/* live project button */}
-              <Link href={project.live}>
-                <TooltipProvider delayDuration={100}>
-                  <Tooltip>
-                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                      <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p>Live project</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </Link>
-              {/* github project button */}
-              <Link href={project.live}>
-                <TooltipProvider delayDuration={100}>
-                  <Tooltip>
-                    <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                      <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p>Github repository</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </Link>
+            <div className="flex flex-col items-start gap-4">
+              {/* buttons */}
+              <div className="flex items-center gap-4">
+                {/* live project button */}
+                {project.live && project.live !== '' && (
+                  <Link href={project.live}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Live project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+                {/* github project button */}
+                <Link href={project.github}>
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Github repository</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                </Link>
+              </div>
+              <p>{project.hint}</p>
             </div>
           </div>
         </div>
@@ -134,8 +142,9 @@ const Projects = () => {
                       <Image
                         src={project.image}
                         fill
-                        className="object-cover"
+                        className="object-contain max-w-full max-h-full"
                         alt="project thumbnail"
+                        
                       />
                     </div>
                   </div>

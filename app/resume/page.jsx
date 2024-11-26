@@ -28,7 +28,7 @@ const about = {
     },
     {
       fieldName: "Languages",
-      fieldValue: "Arabic - Native | English - B2 | French - B2 | Spanish - A2"
+      fieldValue: "Arabic - Native English - B2 French - B2 Spanish - A2"
     },
   ],
 };

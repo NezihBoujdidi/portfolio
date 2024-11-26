@@ -69,6 +69,8 @@ const Contact = () => {
                     {/* Check if the item is email and make it clickable */}
                     {item.title.toLowerCase() === 'email' ? (
                       <a href={`mailto:${item.content}`} className="text-accent hover:underline">{item.content}</a>
+                    ) : item.title.toLowerCase() === 'linkedin' ? (
+                      <a href={`https://www.linkedin.com/in/nezih-boujdidi-44570427b/`} className="text-accent hover:underline">{item.content}</a>
                     ) : (
                       item.content
                     )}
