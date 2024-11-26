@@ -12,7 +12,7 @@ const Home = () => {
           <div className='text-center xl:text-left order-2 xl:order-none'>
             <span className="text-xl">Full Stack Web Developer</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br /><span className="text-accent">Nezih Boujdidi</span>
+              Hello I&apos;m <br /><span className="text-accent">Nezih Boujdidi</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               Passionate about learning and growing, I quickly adapt, love what I do, and am seeking an internship to kickstart my career.

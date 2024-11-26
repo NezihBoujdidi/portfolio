@@ -38,7 +38,7 @@ const Contact = () => {
     <div className="container mx-auto mt-22 xl:mt-24">
       <div className=" mb-6 xl:mb-none" >
         <p className="text-4xl text-accent">
-          Let's create something amazing together!
+          Let&apos;s create something amazing together!
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-[30px]">
