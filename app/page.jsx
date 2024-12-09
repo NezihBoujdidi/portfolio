@@ -19,7 +19,7 @@ const Home = () => {
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-                <a href="/assets/Nezih-BOUJDIDI-CV.pdf" download className="flex items-center gap-2">
+                <a href="/assets/Nezih BOUJDIDI CV.pdf" download className="flex items-center gap-2">
                   <span>Download CV</span>
                   <FileDownIcon className="text-xl" />
                 </a>
